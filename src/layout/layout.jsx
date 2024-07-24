@@ -8,13 +8,14 @@ import { Main } from '../pages/Main/Main';
 
 // import Navbar from '../components/Navbar/Navbar'; // Adjust import path if needed
 
-const Layout = ({ children }) => {
+const Layout = () => {
   return (
     <>
       <Navbar />
-       <BannerSlice/>
-      <main><Outlet/></main>
-          {/* <Main/>      */}
+
+      <main>
+        <Outlet />
+      </main>
       <Footer />
     </>
   );

@@ -15,5 +15,8 @@ export const Main = () => {
                 <h3 className='card_h3'>barchasi</h3>
             </div>
         </div>
+ 
     )
 }
+
+export default Main;

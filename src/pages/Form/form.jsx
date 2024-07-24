@@ -1,5 +1,5 @@
 
-export const Form =()=>{
+ const Form =()=>{
 
     return(
         <div className="form">
@@ -7,3 +7,4 @@ export const Form =()=>{
         </div>
     )
 }
+export default Form;

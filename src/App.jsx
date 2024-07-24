@@ -9,28 +9,36 @@ import { Announcement } from './pages/Announcement/announcement'
 import { Filter } from './pages/Filter/filter'
 import BannerSlice from './pages/Main/BannerSlice'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Register from './pages/Auth/Register/register';
+
+
 
 
 function App() {
-
   return (
     <Routes>
-     <Route path='/' element={<Layout />}>
-        <Route path="/" element={<Main />} />
-        {/* <Route path="banner" element={<BannerSlice />} /> */}
-        {/* <Route path="login" element={<Login />} /> */}
-        {/* <Route path="about" element={<About />} />
+
+      <Route path="/" element={<Navigate to="/home/main" />} />
+
+      <Route path="home" element={<Layout />}>
+        <Route path="main" element={<Main />} />
+        <Route path="profile" element={<Profil />} />
+        <Route path="login" element={<Login />} />
+        <Route path="about" element={<About />} />
         <Route path="announcement" element={<Announcement />} />
-        <Route path="filter" element={<Filter />} /> */}
-        {/* <Route index path="*" element={<Navigate to="/" />} /> */}
+        <Route path="filter" element={<Filter />} />
+        <Route path="*" element={<Navigate to="/home/main" />} />
+      </Route>
+        
+      <Route path="auth">
+        <Route path="login" element={<Login />} />
+        <Route path="register" element={<Register />} />
 
       </Route>
 
-      
-      
-
-  </Routes>
-  )
+      <Route path="*" element={<Navigate to="/home/main" />} />
+    </Routes>
+  );
 }
 
-export default App
+export default App;
