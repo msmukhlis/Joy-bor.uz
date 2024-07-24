@@ -13,7 +13,6 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Navigate to="/home/main" />} />
-
       <Route path="home" element={<Layout />}>
         <Route path="main" element={<Main />} />
         <Route path="profile" element={<Profil />} />
