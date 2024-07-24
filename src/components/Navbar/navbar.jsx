@@ -34,7 +34,7 @@ export const Navbar = () => {
     return (
         <div className=" flex flex-col gap-5">
             <div className="m-0 text-gray-500 bg-customGray px-[10%] py-4 flex justify-between">
-                <div className="flex items-center gap-4 ">
+                <div className="flex items-center gap-4 m-0">
                     O'zbek tili
                     <GoTriangleDown />
                 </div>
@@ -47,7 +47,7 @@ export const Navbar = () => {
             </div>
             <div className="m-0 px-[10%] flex items-center justify-end gap-5">
                 <button
-                    onClick={() => { navigate("/auth/register") }}
+                    onClick={() => { navigate("/home/main") }}
                     className="bg-blue-500 border border-blue-400 text-white font-semibold py-2 px-4 rounded-lg hover:bg-white hover:text-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 >
                     Logo
