@@ -1,5 +1,5 @@
 
-export const Filter =()=>{
+ const Filter =()=>{
 
     return(
         <div className="filter">
@@ -7,3 +7,4 @@ export const Filter =()=>{
         </div>
     )
 }
+export default Filter;

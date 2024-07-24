@@ -1,33 +1,37 @@
-import { Navigate, Route, Routes } from 'react-router-dom'
-import './App.css'
-import { Profil } from './pages/Profil/profil'
-import Layout from './layout/layout'
-import { Main } from './pages/Main/Main'
-import { Login } from './pages/Login/login'
-import { About } from './pages/About/about'
-import { Announcement } from './pages/Announcement/announcement'
-import { Filter } from './pages/Filter/filter'
+import { Navigate, Route, Routes } from 'react-router-dom';
+import Profil from './pages/Profil/profil';
+import Layout from './layout/layout';
+import Main from './pages/Main/Main';
+import Login from './pages/Auth/Login/login';
+import About from './pages/About/about';
+import Announcement from './pages/Announcement/announcement';
+import Filter from './pages/Filter/filter';
+import './App.css';
+import Register from './pages/Auth/Register/register';
 
 function App() {
-
   return (
     <Routes>
-     <Route path='/' element={<Layout />}>
-        <Route path="/" element={<Main />} />
+      <Route path="/" element={<Navigate to="/home/main" />} />
+
+      <Route path="home" element={<Layout />}>
+        <Route path="main" element={<Main />} />
         <Route path="profile" element={<Profil />} />
         <Route path="login" element={<Login />} />
         <Route path="about" element={<About />} />
         <Route path="announcement" element={<Announcement />} />
         <Route path="filter" element={<Filter />} />
-        {/* <Route index path="*" element={<Navigate to="/" />} /> */}
-
+        <Route path="*" element={<Navigate to="/home/main" />} />
+      </Route>
+        
+      <Route path="auth">
+        <Route path="login" element={<Login />} />
+        <Route path="register" element={<Register />} />
       </Route>
 
-      
-      
-
-  </Routes>
-  )
+      <Route path="*" element={<Navigate to="/home/main" />} />
+    </Routes>
+  );
 }
 
-export default App
+export default App;
