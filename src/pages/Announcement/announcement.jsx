@@ -1,5 +1,5 @@
 
-export const Announcement =()=>{
+ const Announcement =()=>{
 
     return(
         <div className="announcement">
@@ -7,3 +7,5 @@ export const Announcement =()=>{
         </div>
     )
 }
+
+export default Announcement;

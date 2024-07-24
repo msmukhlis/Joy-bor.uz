@@ -1,5 +1,5 @@
 
-export const About =()=>{
+ const About =()=>{
 
     return(
         <div className="about">
@@ -7,3 +7,4 @@ export const About =()=>{
         </div>
     )
 }
+export default About;
