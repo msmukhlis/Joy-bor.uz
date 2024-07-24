@@ -1,17 +1,23 @@
-import { Navigate, Route, Routes } from 'react-router-dom';
-import Profil from './pages/Profil/profil';
-import Layout from './layout/layout';
-import Main from './pages/Main/Main';
-import Login from './pages/Auth/Login/login';
-import About from './pages/About/about';
-import Announcement from './pages/Announcement/announcement';
-import Filter from './pages/Filter/filter';
-import './App.css';
+import { Navigate, Route, Routes } from 'react-router-dom'
+import './App.css'
+import { Profil } from './pages/Profil/profil'
+import Layout from './layout/layout'
+import { Main } from './pages/Main/Main'
+import { Login } from './pages/Login/login'
+import { About } from './pages/About/about'
+import { Announcement } from './pages/Announcement/announcement'
+import { Filter } from './pages/Filter/filter'
+import BannerSlice from './pages/Main/BannerSlice'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Register from './pages/Auth/Register/register';
+
+
+
 
 function App() {
   return (
     <Routes>
+
       <Route path="/" element={<Navigate to="/home/main" />} />
 
       <Route path="home" element={<Layout />}>
@@ -27,6 +33,7 @@ function App() {
       <Route path="auth">
         <Route path="login" element={<Login />} />
         <Route path="register" element={<Register />} />
+
       </Route>
 
       <Route path="*" element={<Navigate to="/home/main" />} />
