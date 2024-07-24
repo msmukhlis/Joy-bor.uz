@@ -1,17 +1,24 @@
-import { Navigate, Route, Routes } from 'react-router-dom';
-import Profil from './pages/Profil/profil';
-import Layout from './layout/layout';
-import Main from './pages/Main/Main';
-import Login from './pages/Auth/Login/login';
-import About from './pages/About/about';
-import Announcement from './pages/Announcement/announcement';
-import Filter from './pages/Filter/filter';
-import './App.css';
+import { Navigate, Route, Routes } from 'react-router-dom'
+
+import  Profil  from './pages/Profil/profil'
+import Layout from './layout/layout'
+import  Main  from './pages/Main/Main'
+import  Announcement  from './pages/Announcement/announcement'
+import  Filter  from './pages/Filter/filter'
 import Register from './pages/Auth/Register/register';
+import  Login  from './pages/Auth/Login/login'
+import  About  from './pages/About/about'
+
+// import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css'
+
+
+
 
 function App() {
   return (
     <Routes>
+
       <Route path="/" element={<Navigate to="/home/main" />} />
       <Route path="home" element={<Layout />}>
         <Route path="main" element={<Main />} />
@@ -26,6 +33,7 @@ function App() {
       <Route path="auth">
         <Route path="login" element={<Login />} />
         <Route path="register" element={<Register />} />
+
       </Route>
 
       <Route path="*" element={<Navigate to="/home/main" />} />

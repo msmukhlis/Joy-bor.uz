@@ -55,8 +55,8 @@ export const Footer = () => {
                 <Advertising/>
 
         <div className="flex flex-col gap-2 px-[10%] bg-customGray py-8">
-            <div className="flex gap-24">
-                <div className="">
+            <div className="flex gap-24 m-0">
+                <div className="m-0">
                     <div className="font-semibold text-gray-500">Hujjatlar</div>
                     {
                         documents.map((doc) => (
@@ -65,7 +65,7 @@ export const Footer = () => {
                     }
 
                 </div>
-                <div className="">
+                <div className="m-0">
                     <div className="font-semibold text-gray-500">Bo’limlar</div>
                     {
                         department.map((doc) => (
@@ -74,7 +74,7 @@ export const Footer = () => {
                     }
 
                 </div>
-                <div className="">
+                <div className="m-0">
                     <div className="font-semibold text-gray-500">Tarmoqlardagi sahifalarimiz</div>
                     <div className="flex items-center gap-5 text-2xl">
 
