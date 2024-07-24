@@ -1,5 +1,6 @@
 import { FaFacebookF, FaTelegramPlane } from "react-icons/fa"
 import { IoLogoInstagram } from "react-icons/io"
+import Advertising from "../adversiting/advertising"
 
 export const Footer = () => {
     const documents = [
@@ -49,6 +50,10 @@ export const Footer = () => {
         },
     ]
     return (
+
+        <>
+                <Advertising/>
+
         <div className="flex flex-col gap-2 px-[10%] bg-customGray py-8">
             <div className="flex gap-24">
                 <div className="">
@@ -88,5 +93,6 @@ export const Footer = () => {
                 <div className="">Design by Saidalikhan Sobirov</div>
             </div>
         </div>
+        </>
     )
 }
