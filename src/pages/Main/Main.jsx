@@ -1,13 +1,7 @@
 import './Main.css';
 
 
-
-
-
-
-
-
-export const Main = () => {
+const Main = () => {
     return (
         <div className="container Products">
             <div className="">

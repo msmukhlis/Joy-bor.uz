@@ -10,7 +10,7 @@ const schema = yup.object().shape({
   phoneNumber: yup.string().required('Phone number is required').matches(/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/, 'Phone number must be numeric').min(10, 'Phone number must be at least 10 digits long').max(15, 'Phone number must be at most 15 digits long'),
 });
 
-const Login = () => {
+ const Login = () => {
   const navigate = useNavigate();
   const { register, handleSubmit, formState: { errors } } = useForm({
     resolver: yupResolver(schema),
@@ -19,7 +19,6 @@ const Login = () => {
   const onSubmit = (data) => {
     console.log(data);
     navigate("/home/main");
-    // Handle form submission logic here
   };
 
   return (
