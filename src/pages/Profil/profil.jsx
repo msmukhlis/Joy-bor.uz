@@ -64,12 +64,7 @@ const Profile = () => {
             </div>
             {errors.phoneNumber && <p className="text-red-500 text-xs mt-1">{errors.phoneNumber.message}</p>}
           </div>
-          {/* <button
-            type="submit"
-            className="w-full bg-indigo-500 text-white py-2 px-4 rounded-md hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-          >
-            submit
-          </button> */}
+          
         </form>
     </div>
     </div>
