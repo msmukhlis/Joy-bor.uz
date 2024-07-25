@@ -1,15 +1,22 @@
 import { Navigate, Route, Routes } from 'react-router-dom'
-import './App.css'
-import { Profil } from './pages/Profil/profil'
+
+import  Main  from './pages/Main/Main'
+import  Announcement  from './pages/Announcement/announcement'
+import  Profil  from './pages/Profil/profil'
 import Layout from './layout/layout'
-import { Main } from './pages/Main/Main'
-import { Login } from './pages/Login/login'
-import { About } from './pages/About/about'
-import { Announcement } from './pages/Announcement/announcement'
-import { Filter } from './pages/Filter/filter'
+import  Login  from './pages/Login/login'
+import  About  from './pages/About/about'
+import  Filter  from './pages/Filter/filter'
 import BannerSlice from './pages/Main/BannerSlice'
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Register from './pages/Auth/Register/register';
+import  Login  from './pages/Auth/Login/login'
+import  About  from './pages/About/about'
+
+// import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css'
+
+
+
 
 
 
@@ -20,6 +27,7 @@ function App() {
 
       <Route path="/" element={<Navigate to="/home/main" />} />
 
+      <Route path="/" element={<Navigate to="/home/main" />} />
       <Route path="home" element={<Layout />}>
         <Route path="main" element={<Main />} />
         <Route path="profile" element={<Profil />} />
