@@ -4,7 +4,6 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import { useNavigate } from 'react-router-dom';
 
-// Define schema using Yup
 const schema = yup.object().shape({
   username: yup.string().required('Username is required'),
   phoneNumber: yup.string().required('Phone number is required').matches(/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/, 'Phone number must be numeric').min(10, 'Phone number must be at least 10 digits long').max(15, 'Phone number must be at most 15 digits long'),
@@ -23,7 +22,6 @@ const Register = () => {
   const onSubmit = (data) => {
     console.log(data);
     navigate("/auth/login");
-    // Handle form submission logic here
   };
 
   return (

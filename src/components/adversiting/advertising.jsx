@@ -29,7 +29,6 @@ const Advertising = () => {
         },
 
     ]
-
     return (
         <>
             <div className="Advertising bg-customGray flex gap-[10%] px-[10%] pt-[3%]">
@@ -65,7 +64,7 @@ const Advertising = () => {
                     </div>
                 </div>
             </div>
-            <div className="px-[10%] flex py-[4%]  gap-6">
+            <div className="px-[10%] flex py-[4%]  gap- 6">
                 {
                     description.map((des) => (
                         <div key={des.id} className="flex flex-col gap-4">
