@@ -27,7 +27,7 @@ const Profile = () => {
     <div className="px-[10%] py-[5%] m-0">
         <h2 className="text-3xl font-semibold mb-[5%] ">Profil ma'lumotlari</h2>
 
-    <div className="flex justify-start items-start min-h-screen gap-[10%] ">
+    <div className="flex justify-start items-start   gap-[10%] ">
         <h2 className="text-xl font-bold mb-6 text-center">Shaxsiy ma'lumotlar</h2>
         <form className='w-[40%] m-0' onSubmit={handleSubmit(onSubmit)}>
           <div className="mb-4">
@@ -64,16 +64,11 @@ const Profile = () => {
             </div>
             {errors.phoneNumber && <p className="text-red-500 text-xs mt-1">{errors.phoneNumber.message}</p>}
           </div>
-          {/* <button
-            type="submit"
-            className="w-full bg-indigo-500 text-white py-2 px-4 rounded-md hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-          >
-            submit
-          </button> */}
+          
         </form>
     </div>
     </div>
   );
 };
-
+    
 export default Profile;
