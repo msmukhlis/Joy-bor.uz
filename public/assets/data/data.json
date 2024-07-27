@@ -1,0 +1,77 @@
+{
+    "product": [
+      {
+        "id": 1,
+        "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/302_Walnut_St..jpg/406px-302_Walnut_St..jpg",
+        "title": "Toshkent shahri, Yunusabot tumani 14-kvartal",
+        "description": "4-xonali kvartira ijaraga beriladi // Oila uchun",
+        "rooms": "3",
+        "m": "64.3m",
+        "price": "6 931 836 so'm/oy"
+
+      },
+      {
+        "id": 2,
+        "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/302_Walnut_St..jpg/406px-302_Walnut_St..jpg",
+        "title": "Toshkent shahri, Yunusabot tumani 14-kvartal",
+        "description": "4-xonali kvartira ijaraga beriladi // Oila uchun",
+        "rooms": "3",
+        "m": "64.3m",
+        "price": "6 931 836 so'm/oy"
+      },
+      {
+        "id": 3,
+        "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/302_Walnut_St..jpg/406px-302_Walnut_St..jpg",
+        "title": "Toshkent shahri, Yunusabot tumani 14-kvartal",
+        "description": "4-xonali kvartira ijaraga beriladi // Oila uchun",
+        "rooms": "3",
+        "m": "64.3m",
+        "price": "6 931 836 so'm/oy"
+      },
+      {
+        "id": 4,
+        "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/302_Walnut_St..jpg/406px-302_Walnut_St..jpg",
+        "title": "Toshkent shahri, Yunusabot tumani 14-kvartal",
+        "description": "4-xonali kvartira ijaraga beriladi // Oila uchun",
+        "rooms": "3",
+        "m": "64.3m",
+        "price": "6 931 836 so'm/oy"
+      },
+      {
+        "id": 5,
+        "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/302_Walnut_St..jpg/406px-302_Walnut_St..jpg",
+        "title": "Toshkent shahri, Yunusabot tumani 14-kvartal",
+        "description": "4-xonali kvartira ijaraga beriladi // Oila uchun",
+        "rooms": "3",
+        "m": "64.3m",
+        "price": "6 931 836 so'm/oy"
+      },
+      {
+        "id": 6,
+        "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/302_Walnut_St..jpg/406px-302_Walnut_St..jpg",
+        "title": "Toshkent shahri, Yunusabot tumani 14-kvartal",
+        "description": "4-xonali kvartira ijaraga beriladi // Oila uchun",
+        "rooms": "3",
+        "m": "64.3m",
+        "price": "6 931 836 so'm/oy"
+      },
+      {
+        "id": 7,
+        "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/302_Walnut_St..jpg/406px-302_Walnut_St..jpg",
+        "title": "Toshkent shahri, Yunusabot tumani 14-kvartal",
+        "description": "4-xonali kvartira ijaraga beriladi // Oila uchun",
+        "rooms": "3",
+        "m": "64.3m",
+        "price": "6 931 836 so'm/oy"
+      },
+      {
+        "id": 8,
+        "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/302_Walnut_St..jpg/406px-302_Walnut_St..jpg",
+        "title": "Toshkent shahri, Yunusabot tumani 14-kvartal",
+        "description": "4-xonali kvartira ijaraga beriladi // Oila uchun",
+        "rooms": "3",
+        "m": "64.3m",
+        "price": "6 931 836 so'm/oy"
+      }
+    ]
+}
