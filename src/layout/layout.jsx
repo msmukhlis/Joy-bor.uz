@@ -12,19 +12,14 @@ import { Login } from '../pages/Login/login';
 
 // import Navbar from '../components/Navbar/Navbar'; // Adjust import path if needed
 
-const Layout = ({ children }) => {
+const Layout = () => {
   return (
     <>
       <Navbar />
-        <Filter /> 
 
-        
-        <Login />
-
-      <Main>
+      <main>
         <Outlet />
-      </Main>
-      
+      </main>
       <Footer />
     </>
   );

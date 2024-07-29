@@ -1,3 +1,4 @@
+<<<<<<< HEAD:src/pages/Login/login.jsx
 import React, { useState, useEffect } from 'react';
 import layout from '../../../public/assets/photo/layout.svg';
 import regular from '../../../public/assets/photo/regular.svg';
@@ -79,3 +80,11 @@ export const Login = () => {
         </div>
     );
 }
+=======
+ const Login =()=>{
+    return(
+        <div className="login">Login page</div>
+    )
+}
+export default Login;
+>>>>>>> 5a051160352b7d38613ee47da98827b704509b60:src/pages/Auth/Login/login.jsx

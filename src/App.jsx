@@ -15,19 +15,24 @@ import { Filter } from './pages/Filter/Filter'
 
 
 function App() {
-
   return (
     <Routes>
-      <Route path='/' element={<Layout />}>
-        <Route path="/" element={<Main />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/filter" element={<Filter/>} />
-        
-        {/* <Route path="login" element={<Login />} /> */}
-        {/* <Route path="about" element={<About />} />
+
+      <Route path="/" element={<Navigate to="/home/main" />} />
+
+      <Route path="home" element={<Layout />}>
+        <Route path="main" element={<Main />} />
+        <Route path="profile" element={<Profil />} />
+        <Route path="login" element={<Login />} />
+        <Route path="about" element={<About />} />
         <Route path="announcement" element={<Announcement />} />
-        <Route path="filter" element={<Filter />} /> */}
-        {/* <Route index path="*" element={<Navigate to="/" />} /> */}
+        <Route path="filter" element={<Filter />} />
+        <Route path="*" element={<Navigate to="/home/main" />} />
+      </Route>
+        
+      <Route path="auth">
+        <Route path="login" element={<Login />} />
+        <Route path="register" element={<Register />} />
 
       </Route>
 
@@ -38,4 +43,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
