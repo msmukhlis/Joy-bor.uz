@@ -6,7 +6,7 @@
     import  right from '../../../public/assets/photo/right.svg';
     import  liked from '../../../public/assets/photo/liked.svg';
     import './Main.css';
-    import axios from 'axios';
+    // import axios from 'axios';
 
 
     export const Main = () => {
@@ -16,17 +16,17 @@
         const [likedProducts, setLikedProducts] = useState({});
 
 
-        useEffect(() => {
-        axios.get('http://localhost:3000/product')
-            .then(response => {
-            setData(response.data);
-            setLoading(false);
-            })
-            .catch(error => {
-            setError(error);
-            setLoading(false);
-            });
-        }, []);
+        // useEffect(() => {
+        // axios.get('http://localhost:3000/product')
+        //     .then(response => {
+        //     setData(response.data);
+        //     setLoading(false);
+        //     })
+        //     .catch(error => {
+        //     setError(error);
+        //     setLoading(false);
+        //     });
+        // }, []);
 
         const handleLikeClick = (id) => {
             setLikedProducts(prevState => ({
