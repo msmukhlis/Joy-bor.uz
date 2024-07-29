@@ -40,21 +40,19 @@ export const Navbar = () => {
                     <GoTriangleDown />
                 </div>
                 <div className="flex items-center gap-4 sm:gap-10 flex-wrap">
-                    <div className="">E’lonlarim</div>
-                    <div className="">Saqlanganlar</div>
-                    <div className="">Xabarlar</div>
+                    <div onClick={() => { navigate("/home") }} className="cursor-pointer">E’lonlarim</div>
                     <div onClick={() => { navigate("/home/about") }} className="cursor-pointer">Biz haqimizda</div>
                     <div onClick={() => { navigate("/home/profile") }} className="cursor-pointer">Profil</div>
-                </div>
+                </div> 
             </div>
-            <div className="m-0 px-4 sm:px-[10%] flex items-center justify-between gap-2 sm:gap-5 flex-wrap">
+            <div className="m-0 px-4 sm:px-[10%] flex items-center w-full justify-between gap-2 sm:gap-5 flex-wrap">
                 <button
                     onClick={() => { navigate("/home/main") }}
-                    className="bg-blue-500 border border-blue-400 text-white font-semibold py-2 px-4 rounded-lg hover:bg-white hover:text-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="bg-blue-500   border border-blue-400 text-white font-semibold py-2 px-4 rounded-lg hover:bg-white hover:text-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 >
                     Logo
                 </button>
-                <div className="w-full sm:w-auto flex gap-2 sm:gap-5 items-center justify-end border-blue-500 border-2 py-1 px-1 rounded-lg">
+                <div style={{width:"50vw"}} className="w-full sm:w-auto flex gap-2 sm:gap-5 items-center justify-end border-blue-500 border-2 py-1 px-1 rounded-lg">
 
                     <div className="flex m-0 items-center gap-4 text-gray-500">
                         Toshkent shahri

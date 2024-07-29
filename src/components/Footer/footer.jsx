@@ -52,23 +52,23 @@ export const Footer = () => {
     return (
 
         <>
-            <Advertising /> 
-            
+            <Advertising />
+
             <div className="flex flex-col gap-5 px-4 sm:px-[10%] bg-customGray py-8">
                 <div className="flex     flex-col md:flex-row gap-8 md:gap-24 m-0 ">
                     <div className="m-0">
                         <div className="font-semibold text-gray-500">Hujjatlar</div>
                         {
                             documents.map((doc) => (
-                                <div className="font-semibold py-3" key={doc.id}>{doc.name}</div>
+                                <div className="font-semibold py-3 hover:text-blue-400 cursor-pointer" key={doc.id}>{doc.name}</div>
                             ))
                         }
-                    </div>
+                    </div> 
                     <div className="m-0">
                         <div className="font-semibold text-gray-500">Bo’limlar</div>
                         {
                             department.map((doc) => (
-                                <div className="font-semibold py-3" key={doc.id}>{doc.name}</div>
+                                <div className="font-semibold py-3 hover:text-blue-400 cursor-pointer" key={doc.id}>{doc.name}</div>
                             ))
                         }
                     </div>
@@ -77,7 +77,7 @@ export const Footer = () => {
                         <div className="flex items-center gap-5 text-2xl">
                             {
                                 internet.map((intr) => (
-                                    <div className="font-semibold py-4 text-gray-500" key={intr.id}>{intr.name}</div>
+                                    <div className="font-semibold cursor-pointer hover:text-blue-400 py-4 text-gray-500" key={intr.id}>{intr.name}</div>
                                 ))
                             }
                         </div>

@@ -61,14 +61,14 @@ const Advertising = () => {
             </div>
             <div className="px-4 lg:px-[10%] flex flex-col  lg:flex-row  py-8 gap-6">
                 {description.map((des) => (
-                    <div key={des.id} className="flex flex-col gap-4">
-                        <div className="font-bold text-lg">{des.name}</div>
-                        <div className="font-semibold">{des.des}</div>
-                        <div className="flex text-blue-500 items-center gap-4">
-                            Ko'proq ko'rish
-                            <GoTriangleDown />
-                        </div>
+                    <div key={des.id} className="flex flex-col gap-4   transition-colors duration-300">
+                    <div className="font-bold text-lg">{des.name}</div>
+                    <div className="font-semibold">{des.des}</div>
+                    <div className="flex hover:text-blue-500 font-bold items-center gap-4 group cursor-pointer">
+                        Ko'proq ko'rish
+                        <GoTriangleDown className="transition-transform duration-300 group-hover:rotate-[-90deg]" />
                     </div>
+                </div>
                 ))}
             </div>
         </>
