@@ -1,0 +1,316 @@
+.container {
+    max-width: 1600px;
+    padding: 64px 160px 80px;
+    display: flex;
+    gap: 24px;
+   
+}
+
+.left_side {
+    width: 30%;
+}
+
+.right_side {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.title_left_side {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 32px;
+}
+
+.title_categories {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.checkboxes {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkboxLabel {
+    display: flex;
+    align-items: center;
+    padding: 7px 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.checkboxLabel input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+}
+
+.checkmark {
+    position: relative;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.checkboxes input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkboxes input:checked ~ .checkmark:after {
+    display: block;
+    left: 8px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+.info_side {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.card {
+    padding: 16px;
+    background-color: #F2F4F9;
+    border-radius: 6px;
+    display: flex;
+    gap: 16px;
+    width: 100%;
+}
+
+.justify {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.status {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    color: #FFF;
+    display: inline-flex;
+    width: fit-content;
+}
+
+.status_active {
+    background-color: #2DA771;
+}
+
+.status_pending {
+    background-color: #EC9306;
+}
+
+.status_notactive {
+    background-color: #1D9EF9;
+}
+
+.status_rejected {
+    background-color: #FF3A44;
+}
+
+.address_grey {
+    font-size: 12px;
+    color: #ACACAC;
+    margin-bottom: 4px;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.icons p {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #ACACAC;
+}
+
+.icon {
+    margin-right: 4px;
+    font-size: 20px;
+}
+
+.price {
+    font-weight: 600;
+    color: #1D9EF9;
+}
+
+.btns {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.btn1, .btn2 {
+    width: 245px;
+    padding: 10px 0;
+    border-radius: 6px;
+}
+
+.btn1 {
+    background-color: #1D9EF9;
+    color: #FFF;
+    margin-bottom: 7px;
+}
+
+.btn2 {
+    border: 1px solid #1D9EF9;
+    color: #1D9EF9;
+}
+
+.image_side {
+    width: 22%;
+}
+
+.image_side img {
+    width: 146px;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .container {
+        padding: 64px 80px 80px;
+        flex-wrap: wrap;
+    }
+
+    .left_side {
+        width: 35%;
+    }
+
+    .right_side {
+        width: 65%;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        padding: 32px 40px;
+    }
+
+    .left_side {
+        width: 40%;
+    }
+
+    .right_side {
+        width: 60%;
+    }
+
+    .card {
+        flex-direction: column;
+    }
+
+    .image_side {
+        width: 100%;
+    }
+
+    .image_side img {
+        width: 100%;
+    }
+
+    .justify {
+        flex-direction: column;
+    }
+
+    .btns {
+        align-items: center;
+    }
+
+    .btn1, .btn2 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 16px;
+    }
+
+    .left_side {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    .right_side {
+        width: 100%;
+    }
+
+    .card {
+        flex-direction: column;
+        gap: 16px;
+        padding: 16px;
+    }
+
+    .image_side {
+        width: 100%;
+    }
+
+    .image_side img {
+        width: 100%;
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .status {
+        font-size: 10px;
+        padding: 2px 4px;
+    }
+
+    .icons p {
+        font-size: 12px;
+    }
+
+    .price {
+        font-size: 16px;
+    }
+
+    .btn1, .btn2 {
+        width: 100%;
+        padding: 12px 0;
+    }
+    .btns {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .title_left_side {
+        font-size: 20px;
+    }
+
+    .title_categories {
+        font-size: 16px;
+    }
+
+    .checkboxLabel {
+        font-size: 14px;
+    }
+
+    .price {
+        font-size: 14px;
+    }
+
+    .btn1, .btn2 {
+        padding: 14px 0;
+        font-size: 14px;
+    }
+}

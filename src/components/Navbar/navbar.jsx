@@ -43,6 +43,7 @@ export const Navbar = () => {
                     <div className="">E’lonlarim</div>
                     <div className="">Saqlanganlar</div>
                     <div className="">Xabarlar</div>
+                    <div onClick={() => { navigate("/home/about") }} className="cursor-pointer">Biz haqimizda</div>
                     <div onClick={() => { navigate("/home/profile") }} className="cursor-pointer">Profil</div>
                 </div>
             </div>
@@ -74,15 +75,15 @@ export const Navbar = () => {
                     Kirish
                 </button>
             </div>
-            <div className="m-0 px-4 sm:px-[10%] flex items-center justify-between flex-wrap gap-2 sm:gap-5">
+            <div className="m-0 px-4 sm:px-[10%] flex items-center justify-between flex-wrap  sm:gap-4">
                 <div className="text-gray-500">Kategoriyasi:</div>
-                <div className="flex items-center gap-2 sm:gap-11 font-semibold flex-wrap">
+                <div className="flex items-center gap-1 sm:gap-5 font-semibold flex-wrap">
                     {categories.map((category) => (
                         <div className="" key={category.id}>{category.name}</div>
                     ))}
 
                 </div>
-                <div className="flex items-center gap-2 sm:gap-4 font-semibold">
+                <div className="flex items-center gap-1 sm:gap-3 font-semibold">
                     Barcha bo'limlar:
                     <GoTriangleDown />
                 </div>

@@ -5,6 +5,7 @@ import  Announcement  from './pages/Announcement/announcement'
 import  Profil  from './pages/Profil/profil'
 import Layout from './layout/layout'
 import  Filter  from './pages/Filter/filter'
+import  MyAnnouncement  from './pages/MyAnnouncement/MyAnnouncement'
 import Register from './pages/Auth/Register/register';
 import  Login  from './pages/Auth/Login/login'
 import  About  from './pages/About/about'
@@ -31,6 +32,7 @@ function App() {
         <Route path="login" element={<Login />} />
         <Route path="about" element={<About />} />
         <Route path="announcement" element={<Announcement />} />
+        <Route path="my-announcement" element={<MyAnnouncement />} />
         <Route path="filter" element={<Filter />} />
         <Route path="*" element={<Navigate to="/home/main" />} />
       </Route>
@@ -38,7 +40,6 @@ function App() {
       <Route path="auth">
         <Route path="login" element={<Login />} />
         <Route path="register" element={<Register />} />
-
       </Route>
 
       <Route path="*" element={<Navigate to="/home/main" />} />
